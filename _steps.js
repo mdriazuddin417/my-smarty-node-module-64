@@ -18,6 +18,11 @@ For Express for Server
 ===========get=============
 1. cors middleware  
 2.app.use(express.json());
+===========id search===========
+1. console.log(req.params);
+  const id = parseInt(req.params.id);
+  const user = users.find((u) => u.id === id);
+  res.send(user);
 ===========query search==========
 1. req.query.(option)
 2  const search = req.query.name.toLowerCase();
